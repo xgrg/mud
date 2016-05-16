@@ -9,7 +9,7 @@ body {
 }
 
 @media (min-width:300px){
-   #canvas {
+   .canvas {
       height:250px;
    }
    #actions{
@@ -18,13 +18,36 @@ body {
 }
 
 @media (min-width:1200px){
-   #canvas {
+   .canvas {
       height:600px;
    }
    #actions{
       height:150px;
    }
 }
+
+#actions{
+   background-color:black;
+   color:#EEEEEE;
+}
+
+.canvas {
+   text-align:center;
+   background-color:#222222;
+   padding:20px;
+}
+
+#choice tr, td{
+   text-align:center;
+   vertical-align:middle;
+   border:1px gray solid;
+   padding: 30px;
+   background-color:#F0F0F0;
+}
+#choice{
+   width:100%
+}
+
 
 .typed-cursor{
     opacity: 1;
