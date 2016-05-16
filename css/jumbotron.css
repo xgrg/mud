@@ -1,0 +1,49 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: justify;
+}
+
+@media (min-width:300px){
+   #canvas {
+      height:250px;
+   }
+   #actions{
+      height:100px;
+   }
+}
+
+@media (min-width:1200px){
+   #canvas {
+      height:600px;
+   }
+   #actions{
+      height:150px;
+   }
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

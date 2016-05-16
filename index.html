@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <script type="text/javascript" src="./js/jquery-2.2.0.min.js"></script>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" type="image/png" href="./images/favicon.png">
+
+      <title>Mud</title>
+
+      <!-- Bootstrap core CSS -->
+      <link href="./vendor/bootstrap-3.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- Custom styles for this template -->
+      <link href="./css/jumbotron.css" rel="stylesheet">
+
+   </head>
+   <body>
+
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="/">MUD</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+               <ul class="nav navbar-nav navbar-right">
+                  <li>
+                     <a id="logout" class="btn btn-primary" href="auth/logout/">Log out</a>
+                  </li>
+               </ul>
+            </div><!--/.navbar-collapse -->
+         </div>
+      </nav>
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12">
+
+               <!-- Nav tabs -->
+               <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                  <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                  <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                  <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+               </ul>
+               <!-- Tab panes -->
+               <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane fade in active" id="home">
+                     <div id="canvas" class="well well-lg" >
+                        Clique-moi dessus
+                     </div>
+                     <div id="actions" class="well well-lg" >
+                        <p id="actions2" style="display:inline">
+                        </p>
+                     </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="profile">
+                     <div class="well well-lg" >
+                        hey 2
+                     </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="messages">
+                     <div class="well well-lg" >
+                        hey 3
+                     </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="settings">
+                     <div class="well well-lg" >
+                        hey 4
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+         <footer>
+            <p>&copy; 2016 Mud, Inc.</p>
+         </footer>
+      </div> <!-- /container -->
+
+
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+         <!-- Placed at the end of the document so the pages load faster -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+         <script src="./vendor/bootstrap-3.3.6/dist/js/bootstrap.min.js"></script>
+         <script src="./js/typed.min.js"></script>
+         <script src="./js/mud.js"></script>
+         <script>
+	    $("#canvas").click(function(){
+		  $("#actions2").typed({
+		    strings: ["Coucou ma chérie.", "Tu en as pour longtemps ?"],
+		    typeSpeed: 0
+		  });
+	      });
+         </script>
+   </body>
+</html>
+
